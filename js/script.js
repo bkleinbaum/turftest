@@ -30,5 +30,9 @@ var councilMap = new L.GeoJSON.AJAX('https://bk741.cartodb.com/api/v2/sql?q=SELE
 
     console.log(tagged);
 
+L.mapbox.featureLayer().setGeoJSON(tagged).addTo(map);
+L.mapbox.featureLayer().setGeoJSON(search).addTo(map);
+L.mapbox.featureLayer().setGeoJSON(councilFinal).addTo(map);
+
 
 });
